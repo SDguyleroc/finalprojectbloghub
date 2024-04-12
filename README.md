@@ -1,43 +1,43 @@
-# finalprojectbloghub
-Group 3 FinalProject
+# Group 3 FinalProject
 By Nirav Patel, Ossebi Guy-Lero, Le Duc Toan.
 
-Introduction
-Our project aims to develop a web application called "Blogger's Hub" that provides a platform for bloggers to create, publish, and share their content with readers. The application will offer a user-friendly interface for both writers and readers, fostering a community where bloggers can engage with their audience and grow their following.
+## Introduction
+Our project aims to develop a web application called "Blogger's Hub" that provides a platform for bloggers to create, publish, and share their content with readers. The application will offer a user-friendly interface for both writers and readers, fostering a community where bloggers can engage with their audience and grow their following. 
 
-Story Board
-StoryBoard
+## Story Board
+![StoryBoard](https://github.com/patel6nr/Group3FinalProject/assets/122308867/c9d79d32-4251-4b25-ad7c-12f7d1985363)
 
-Requirements
-1. Creating and Publishing Blog Posts: As a User, I want to create and publish blog posts so that I can share my thoughts and ideas with others.
+## Requirements
+ 
+**1. Creating and Publishing Blog Posts**: As a User, I want to create and publish blog posts so that I can share my thoughts and ideas with others.
+   
+**Given**: The user is logged in to the Blogger's Hub platform.
 
-Given: The user is logged in to the Blogger's Hub platform.
+**When**: The user navigates to the "Create New Post" page and fills out the required fields.
 
-When: The user navigates to the "Create New Post" page and fills out the required fields.
+**Then**: The user's blog post is published and made visible to readers. 
 
-Then: The user's blog post is published and made visible to readers.
+**2. Categorizing Blog Posts**: As a User, I want to categorize my blog posts so that I can organize my content effectively. 
 
-2. Categorizing Blog Posts: As a User, I want to categorize my blog posts so that I can organize my content effectively.
+**Given**: The user is creating a new blog post.
 
-Given: The user is creating a new blog post.
+**When**: The user selects one or more categories for the post. 
 
-When: The user selects one or more categories for the post.
+**Then**: The post is tagged with the selected categories. 
 
-Then: The post is tagged with the selected categories.
+**3. Interacting with Other Bloggers and Readers**: As a User, I want to interact with other bloggers and readers so that I can build a 	community around my blog. 
 
-3. Interacting with Other Bloggers and Readers: As a User, I want to interact with other bloggers and readers so that I can build a community around my blog.
+**Given**: The user is viewing a blog post. 
 
-Given: The user is viewing a blog post.
+**When**: The user leaves a comment on the post.
 
-When: The user leaves a comment on the post.
+**Then**: The comment is displayed on the post and other users can respond to it. 
 
-Then: The comment is displayed on the post and other users can respond to it.
-
-Class Diagram
-StoryBoard
-
-Class Diagram Description
-The class diagram shows how a user can create his/her own blog. The user can also view blogs posted by other users and also comment, like and share the blog. Bloggers Hub also allows the user to filter blogs using category, tag and date posted.
+## Class Diagram
+![StoryBoard](https://github.com/patel6nr/Group3FinalProject/assets/122308867/22f75fe5-e43e-411f-bd4b-91e01be0098a) 
+### Class Diagram Description 
+The class diagram shows how a user can create his/her own blog. The user can also view blogs posted by other users and also comment, like and share the blog.
+Bloggers Hub also allows the user to filter blogs using category, tag and date posted.
 
 JSON Schema
 This is what we plan to export to another app.
@@ -62,11 +62,12 @@ No projects or tasks defined yet. To be planned in upcoming meetings.
 Milestone #3: Social Features
 
 No projects or tasks defined yet. To be planned in upcoming meetings.
-Team Members and Roles
-UI Specialist: Ossebi Guy-Leroc
 
-Business Logic/ Persistence: Le Duc Toan, Guy-leroc Ossebi
+## Team Members and Roles
+**UI Specialist**: Ossebi Guy-Lero
 
-DevOps/: Nirav Patel, Guy-leroc Product Owner/Scrum Master: Nirav Patel, Guy-leroc Ossebi
+**Business Logic/ Persistence**: Le Duc Toan
 
-Team Meeting: Every Sunday evenings Between 6pm to 8pm
+**DevOps/Product Owner/Scrum Master/GitHub Admin**: Nirav Patel
+
+**Team Meeting**: Every Sunday evenings Between 6pm to 8pm
