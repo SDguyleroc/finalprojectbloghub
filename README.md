@@ -97,7 +97,7 @@ This is what we plan to export to another app.
 **Enhance Commenting System**:
 - Implement features like threaded comments, upvoting/downvoting, and comment moderation.
   
-Integrate Analytics:
+**Integrate Analytics**:
 - Add analytics to track blog post views, user engagement, and traffic sources.
   
 ### Milestone #3: Social Features
