@@ -1,5 +1,5 @@
 # Group 3 FinalProject
-By Nirav Patel, Ossebi Guy-Lero, Le Duc Toan.
+By Nirav Patel, Ossebi Guy-Lero
 
 ## Introduction
 Our project aims to develop a web application called "Blogger's Hub" that provides a platform for bloggers to create, publish, and share their content with readers. The application will offer a user-friendly interface for both writers and readers, fostering a community where bloggers can engage with their audience and grow their following. 
@@ -64,10 +64,8 @@ Milestone #3: Social Features
 No projects or tasks defined yet. To be planned in upcoming meetings.
 
 ## Team Members and Roles
-**UI Specialist**: Ossebi Guy-Lero
+**UI Specialist / Business Logic / Persistence / DevOps / Product Owner / Scrum Master / GitHub Admin**
+Ossebi Guy-Lero and Nirav Patel
 
-**Business Logic/ Persistence**: Le Duc Toan
-
-**DevOps/Product Owner/Scrum Master/GitHub Admin**: Nirav Patel
-
-**Team Meeting**: Every Sunday evenings Between 6pm to 8pm
+**Team Meeting**
+Every Sunday evening Between 6 pm to 8 pm
