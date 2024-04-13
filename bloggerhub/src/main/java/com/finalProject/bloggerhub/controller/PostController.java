@@ -49,4 +49,14 @@ public class PostController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
     }
+
+    @PutMapping("/{postId}/like")
+    public ResponseEntity<?> likePost(@PathVariable Long postId ){
+        try{
+            postService.likePost(postId);
+            return ResponseEntity.ok(new String[]{"Liked Post"});
+        } catch (EntityNotFoundException e){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+    }
 }

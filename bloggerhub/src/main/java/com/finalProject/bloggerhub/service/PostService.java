@@ -9,4 +9,5 @@ public interface PostService {
     Post savePost(Post post);
     List<Post> getAllposts();
     Post getPostById(Long postId);
+    void likePost(Long postId);
 }
