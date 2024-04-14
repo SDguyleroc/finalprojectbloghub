@@ -10,4 +10,6 @@ public interface PostService {
     List<Post> getAllposts();
     Post getPostById(Long postId);
     void likePost(Long postId);
+    List<Post> searchByName(String name);
+
 }

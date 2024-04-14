@@ -1,0 +1,47 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-container {
+    margin: 16px;
+    max-width: 60%;
+    padding-bottom: 30px;
+
+}
+
+mat-card{
+    padding: 10px;
+
+}
+
+.example-header-image{
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+mat-card-footer{
+    margin-left: 20px;
+
+}
+
+mat-card-content{
+    margin-left: 10px;
+}
+
+
+
+.img{
+    object-fit: cover;
+
+}
+
+.comment-card{
+    margin-top: 20px;
+}
+
+mat-form-field{
+    width: 100%;
+}
