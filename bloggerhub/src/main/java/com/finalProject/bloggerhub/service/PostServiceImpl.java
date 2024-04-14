@@ -1,6 +1,5 @@
 package com.finalProject.bloggerhub.service;
 
-import com.fasterxml.jackson.annotation.OptBoolean;
 import com.finalProject.bloggerhub.entity.Post;
 import com.finalProject.bloggerhub.repository.PostRepository;
 
@@ -8,7 +7,6 @@ import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -20,8 +18,9 @@ public class PostServiceImpl implements PostService {
     private PostRepository postRepository;
 
     public PostServiceImpl(PostRepository postRepository) {
-
+        this.postRepository = postRepository;
     }
+
 
     public Post savePost(Post post){
         post.setLikeCount(0);
