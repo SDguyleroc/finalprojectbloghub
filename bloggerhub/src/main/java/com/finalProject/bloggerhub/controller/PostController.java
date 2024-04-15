@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * @author Guy-leroc Ossebi
+ * Controller class for managing blog posts.
+ */
+
 @RestController
 @RequestMapping("/api/post")
 @CrossOrigin(origins = "*")
@@ -17,6 +22,13 @@ public class PostController {
 
     @Autowired
     private PostService postService;
+
+    /**
+     * Creates a new post.
+     *
+     * @param post The post to be created.
+     * @return ResponseEntity containing the created post, or an error response if creation fails.
+     */
 
     @PostMapping
     public ResponseEntity<?> createdPost(@RequestBody Post post){
@@ -28,6 +40,12 @@ public class PostController {
         }
     }
 
+    /**
+     * Retrieves all posts.
+     *
+     * @return ResponseEntity containing a list of all posts, or an error response if retrieval fails.
+     */
+
     @GetMapping
     public ResponseEntity<List<Post>> getAllPost(){
        try {
@@ -38,6 +56,14 @@ public class PostController {
        }
     }
 
+
+    /**
+     * Retrieves a post by its ID.
+     *
+     * @param postId The ID of the post to retrieve.
+     * @return ResponseEntity containing the retrieved post, or an error response if the post is not found.
+     */
+    
     @GetMapping("/{postId}")
     public ResponseEntity<?> getPostById(@PathVariable Long postId){
         try{
@@ -50,6 +76,13 @@ public class PostController {
         }
     }
 
+    /**
+     * Increases the like count for a post.
+     *
+     * @param postId The ID of the post to like.
+     * @return ResponseEntity indicating success or failure of the like operation.
+     */
+
     @PutMapping("/{postId}/like")
     public ResponseEntity<?> likePost(@PathVariable Long postId ){
         try{
@@ -60,6 +93,13 @@ public class PostController {
         }
     }
 
+      /**
+     * Searches for posts by name.
+     *
+     * @param name The name to search for in post titles.
+     * @return ResponseEntity containing a list of posts whose titles contain the specified name,
+     *         or an error response if the search fails.
+     */
     @GetMapping("/search/{name}")
     public ResponseEntity<?> searchByName(@PathVariable String name){
         try {
