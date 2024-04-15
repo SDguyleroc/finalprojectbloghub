@@ -1,6 +1,15 @@
 # Group 3 FinalProject
 Ossebi Guy-Lero and Nirav Patel
 
+## Instructions
+This project has front end which is build using Angular Frame-work and spring boot for backend.
+1. run the backend using IntelliJ IDE or visual studio.
+2. to run the client side (front-end) which is in the src/main/resources/static.WebBlog
+   1. in INTELIJ IDEA right click the static.WebBlog
+   2. then click open in then select terminal
+   3. in type ng serve to run.
+   4. like this: ..\GroupFinalprojectEnterpriseApp\bloggerhub\bloggerhub\src\main\resources\static\WebBlog> ng serve
+
 ## Introduction
 Our project aims to develop a web application called "Blogger's Hub" that provides a platform for bloggers to create, publish, and share their content with readers. The application will offer a user-friendly interface for both writers and readers, fostering a community where bloggers can engage with their audience and grow their following. 
 
