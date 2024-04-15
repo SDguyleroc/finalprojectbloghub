@@ -11,6 +11,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Implementation of the {@link PostService} interface that provides methods to manage blog posts.
+ */
+
 @Service
 public class PostServiceImpl implements PostService {
 
@@ -22,6 +26,13 @@ public class PostServiceImpl implements PostService {
     }
 
 
+     /**
+     * Saves a new post.
+     *
+     * @param post The post to be saved.
+     * @return The saved post.
+     */
+
     public Post savePost(Post post){
         post.setLikeCount(0);
         post.setViewCount(0);
@@ -30,10 +41,25 @@ public class PostServiceImpl implements PostService {
         return postRepository.save(post);
     }
 
+     /**
+     * Retrieves all posts.
+     *
+     * @return A list of all posts.
+     */
+
     public List<Post> getAllposts(){
         return postRepository.findAll();
     }
 
+
+     /**
+     * Retrieves a post by its ID.
+     *
+     * @param postId The ID of the post to retrieve.
+     * @return The post with the specified ID.
+     * @throws EntityNotFoundException If no post is found with the given ID.
+     */
+    
     public Post getPostById(Long postId){
         Optional<Post> optionalPost = postRepository.findById(postId);
         if(optionalPost.isPresent()){
@@ -44,6 +70,14 @@ public class PostServiceImpl implements PostService {
             throw new EntityNotFoundException("Post not found:");
         }
     }
+
+
+    /**
+     * Increases the like count for a post.
+     *
+     * @param postId The ID of the post to like.
+     * @throws EntityNotFoundException If no post is found with the given ID.
+     */
 
     public void likePost(Long postId){
         Optional<Post> optionalPost = postRepository.findById(postId);
@@ -58,6 +92,13 @@ public class PostServiceImpl implements PostService {
         }
     }
 
+
+    /**
+     * Searches for posts by name.
+     *
+     * @param name The name to search for in post titles.
+     * @return A list of posts whose titles contain the specified name.
+     */
     public List<Post> searchByName(String name){
         return postRepository.findAllByNameContaining(name);
     }

@@ -22,6 +22,16 @@ public class CommentServiceImpl implements CommentService{
     @Autowired
     private PostRepository postRepository;
 
+    /**
+ * Creates a new comment for a post.
+ *
+ * @param postId    The ID of the post for which the comment is created.
+ * @param postedBy  The name of the user who is posting the comment.
+ * @param content   The content of the comment.
+ * @return The newly created comment.
+ * @throws EntityNotFoundException If the post with the given ID is not found.
+ */
+
     public Comment createComment(Long postId, String postedBy, String content){
         Optional<Post> optionalPost= postRepository.findById(postId);
 
