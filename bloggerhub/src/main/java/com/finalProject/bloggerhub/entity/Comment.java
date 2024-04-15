@@ -5,6 +5,11 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * @author Guy-leroc Ossebi
+ * Comment Entity.
+ */
+
 @Entity
 @Data
 public class Comment {
