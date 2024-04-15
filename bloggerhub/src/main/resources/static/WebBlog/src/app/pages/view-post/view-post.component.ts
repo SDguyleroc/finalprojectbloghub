@@ -25,7 +25,7 @@ export class ViewPostComponent {
 
 
 
-  constructor(private snackBar:MatSnackBar, private postService:PostService, private activatedRouter:ActivatedRoute, 
+  constructor(private snackBar:MatSnackBar, private postService:PostService, private activatedRouter:ActivatedRoute,
     private commentService:CommentService, private fb:FormBuilder, private router:Router ){}
 
   ngOnInit(){
@@ -73,7 +73,7 @@ export class ViewPostComponent {
   likePost(){
     this.postService.likePost(this.postId).subscribe((response)=>{
       this.snackBar.open("Liked", "Ok");
-      this.getpostById;
+      this.getpostById();
     }, (error)=>{this.snackBar.open("Something went wrong", "ok")})
   }
 
